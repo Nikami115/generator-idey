@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Генератор ідей</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🎯 Генератор ідей</h1>
+
+        <label for="category">Оберіть категорію:</label><br>
+        <select id="category">
+            <option value="all">Усі</option>
+            <option value="бізнес">Бізнес</option>
+            <option value="творчість">Творчість</option>
+            <option value="саморозвиток">Саморозвиток</option>
+            <option value="хобі">Хобі</option>
+            <option value="освіта">Освіта</option>
+            <option value="розваги">Розваги</option>
+            <option value="допомога">Допомога іншим</option>
+        </select>
+
+        <p id="idea-box">Натисни кнопку, щоб отримати ідею 💡</p>
+
+        <button onclick="generateIdea()">Отримати ідею</button>
+        <button onclick="saveIdea()">Зберегти в обране ⭐</button>
+
+        <h3>➕ Додати свою ідею</h3>
+        <input type="text" id="new-idea" placeholder="Ваша ідея">
+        <select id="new-category">
+            <option value="бізнес">Бізнес</option>
+            <option value="творчість">Творчість</option>
+            <option value="саморозвиток">Саморозвиток</option>
+            <option value="хобі">Хобі</option>
+            <option value="освіта">Освіта</option>
+            <option value="розваги">Розваги</option>
+            <option value="допомога">Допомога іншим</option>
+        </select>
+        <button onclick="addCustomIdea()">Додати ідею</button>
+
+        <h3>⭐ Обрані ідеї:</h3>
+        <ul id="saved-ideas"></ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

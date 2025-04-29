@@ -1,0 +1,12 @@
+{
+  "name": "4",
+  "version": "1.0.0",
+  "main": "script.js",
+  "scripts": {
+    "start": "live-server"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
